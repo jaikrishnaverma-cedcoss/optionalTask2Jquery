@@ -41,7 +41,7 @@ function gainer(btn)
     var price=perPrice*quant;//price of one product
     prdArr[index].price=price;
     
-    $('.dikhao'+index+':nth-child(1)').text(price+"$");
+    // $('.dikhao'+index+':nth-child(1)').text(price+"$");
     $('.dikhao'+index+':nth-child(2)').text(price+"$");
     console.log(prdArr);
     total();
@@ -56,7 +56,7 @@ function gainer(btn)
     sum+=parseInt(prdArr[i].price);
   }
   document.getElementById('subtotal').innerText=sum+"$";
-  document.getElementById('tax').innerText=(sum*105/100)+"$";
+  document.getElementById('tax').innerText=(sum*5/100)+"$";
   var grandTotal=(sum*105/100)+5;
   document.getElementById('total').innerText=grandTotal;
 
